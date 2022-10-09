@@ -19,6 +19,7 @@ const getAllUser = async (req, res, next) => {
 }
 
 const CreateUser = async (req, res, next) => {
+
     let { name, email, password } = req.body
     if (!name && name.trim() === " " && !email && email.trim() === " " && !password && password.length > 6) {
         return res.status(422).json({ message: "Inavlid user" })

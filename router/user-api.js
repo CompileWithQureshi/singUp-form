@@ -4,7 +4,7 @@ const Routs = express.Router()
 
 
 Routs.get('/', getAllUser)
-Routs.post('/', CreateUser)
+Routs.post('/post', CreateUser)
 Routs.put('/:id', UpdateUser)
 Routs.delete('/:id', DelectUser)
 Routs.get('/:id', getById)
